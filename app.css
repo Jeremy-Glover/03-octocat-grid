@@ -1,9 +1,54 @@
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
 
 body {
   width: 900px;
+  margin: auto;
+  color: lightgray;
 }
 
 .cat-column {
-  width: 200px;
   float: left;
+  display: inline;
+  margin: auto;
+  width: 280;
+  padding: 10px;
+}
+
+.octocats {
+  float: left;
+  width: 275px;
+  padding: 25px;
+  border: lightgray 1px solid;
+  display: inline;
+
+}
+
+.number {
+  position: relative;
+  bottom: -12px;
+  padding: 8px 0 18px 0;
+
+}
+
+.created {
+  float: right;
+  display: inline inline-block;
+  position: relative;
+  top: -40px;
+}
+
+.avatar {
+  width: 20px;
+  vertical-align: middle;
+}
+span {
+  color: black;
+}
+hr {
+
 }
