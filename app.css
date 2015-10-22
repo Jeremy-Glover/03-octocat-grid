@@ -6,49 +6,40 @@
 }
 
 body {
-  width: 900px;
+  max-width: 900px;
   margin: auto;
   color: lightgray;
+  display: ;
 }
 
 .cat-column {
+  display: inline-block;
   float: left;
-  display: inline;
-  margin: auto;
-  width: 280;
-  padding: 10px;
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  border-bottom: 1px solid lightgray;
 }
 
 .octocats {
   float: left;
-  width: 275px;
-  padding: 25px;
-  border: lightgray 1px solid;
-  display: inline;
-
+  width: 100%;
+  border: 1px solid lightgray;
 }
 
 .number {
-  position: relative;
-  bottom: -12px;
-  padding: 8px 0 18px 0;
-
+  float: left;
 }
 
 .created {
   float: right;
-  display: inline inline-block;
-  position: relative;
-  top: -40px;
+  padding-right: 5px;
 }
 
 .avatar {
   width: 20px;
   vertical-align: middle;
 }
+
 span {
   color: black;
-}
-hr {
-
 }
