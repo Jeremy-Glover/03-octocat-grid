@@ -9,7 +9,6 @@ body {
   max-width: 900px;
   margin: auto;
   color: lightgray;
-  display: ;
 }
 
 .cat-column {
@@ -21,9 +20,24 @@ body {
 }
 
 .octocats {
-  float: left;
   width: 100%;
   border: 1px solid lightgray;
+}
+
+.frame {
+  position: relative;
+}
+
+.frame::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  right: 1%;
+  width: 0;
+  height: 0;
+  border: solid;
+  border-color: #bec2c4 transparent transparent transparent;
+  border-width: 8px 4px 0 4px;
 }
 
 .number {
@@ -32,12 +46,13 @@ body {
 
 .created {
   float: right;
-  padding-right: 5px;
+  padding-right: 4px;
 }
 
 .avatar {
   width: 20px;
   vertical-align: middle;
+  border-radius: 20%;
 }
 
 span {
