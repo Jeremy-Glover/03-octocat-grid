@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+body {
+  max-width: 900px;
+  margin: auto;
+  color: lightgray;
+}
+
+.cat-column {
+  display: inline-block;
+  float: left;
+  width: calc(33.333% - 20px);
+  margin: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.octocats {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+.frame {
+  position: relative;
+}
+
+.frame::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  right: 1%;
+  width: 0;
+  height: 0;
+  border: solid;
+  border-color: #bec2c4 transparent transparent transparent;
+  border-width: 8px 4px 0 4px;
+}
+
+.number {
+  float: left;
+}
+
+.created {
+  float: right;
+  padding-right: 4px;
+}
+
+.avatar {
+  width: 20px;
+  vertical-align: middle;
+  border-radius: 20%;
+}
+
+span {
+  color: black;
+}
